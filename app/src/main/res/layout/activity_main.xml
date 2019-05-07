@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <com.wzy.starbardemo.StarBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ratingbar:starCount="5"
+        ratingbar:starDistance="10dp"
+        ratingbar:starEmpty="@mipmap/ic_rating_empty"
+        ratingbar:starFill="@mipmap/ic_rating_full"
+        ratingbar:starSize="30dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <com.wzy.starbardemo.StarBar
+        android:id="@+id/starBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        ratingbar:clickable="false"
+        ratingbar:starCount="5"
+        ratingbar:starDistance="10dp"
+        ratingbar:starEmpty="@mipmap/ic_rating_empty"
+        ratingbar:starFill="@mipmap/ic_rating_full"
+        ratingbar:starSize="20dp" />
+
+</LinearLayout>
